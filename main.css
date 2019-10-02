@@ -39,8 +39,13 @@ h3 {
 .para {
     margin: -5px 0px 75px 0px;
     font-size: 16px;
+    color: grey;
     line-height: 20px;
-    font-weight: lighter;
+    font-weight: normal;
+}
+
+ul {
+    margin-left: -25px;
 }
 
 .interviewMenu {
@@ -63,4 +68,9 @@ h3 {
     font-size: 24px;
     padding-top: 20px;
     margin-bottom: 25px;
+}
+
+.carsonImages {
+    margin: -1000px 0px, 75px 0px;
+    text-align: center;
 }
