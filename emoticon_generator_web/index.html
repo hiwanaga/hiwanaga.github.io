@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Emotion Generator</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="home"><a href="index.html">EMOTICON GENERATOR</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li class="links"><a href="arcihve.html">Archive</a></li>
+                <li class="links"><a class="active" href="index.html">Generator</a></li>
+                <li class="links"><a href="history.html">History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="mainContainer">
+        <p>Type in, or choose a facial element from the list :)</p>
+        <div id="generatorType">
+            <input type="text" id="ownGenerator" placeholder="CREATE YOUR OWN EMOTICON NOW!">
+            <button onclick="copy()">Copy this emoticon!</button>
+        </div>
+        <div class="icons">
+            <div class="icon"></div>
+            <div class="icon"></div>
+        </div>
+    </div>
+
+    <div id="creationHelp">
+        <p>Need help with creating Emoticons? Check this out!</p>
+        <div class="facialPart">
+            <p class="facialPartTitle">Face Contor</p>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Round</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">( )</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Rectengular</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">[ ]</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Cruve</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">{ }</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle"></p>
+                </div>
+                <div class="column">
+                    <p class="subTitle"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facialPart">
+            <p class="facialPartTitle">Eyes</p>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">filled eye ball</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">・・</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Outlined eye ball</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">｡　｡</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Horizontal line</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">- -</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Confused eye</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">´ ｀</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Crying 1</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">T T</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Crying 2</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">; ;</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Angry</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">｀ ´</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Closing eyes</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle"> >
+                        < </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="facialPart">
+        <p class="facialPartTitle"></p>
+
+        <div class="facialPart">
+            <p class="facialPartTitle">Mouth</p>
+
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">smile 1</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">∀</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">smile 2</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">▽</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Open mouth sadly</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">д</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">Open mouth</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">О</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">smile 3</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">ω</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">close mouth</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">_</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">showing teeth</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">皿</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">opening mouth a little</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">△</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facialPart">
+            <p class="facialPartTitle">Nose</p>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">nose</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">-</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle"></p>
+                </div>
+                <div class="column">
+                    <p class="subTitle"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facialPart">
+            <p class="facialPartTitle">Cheeks</p>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">embarrassed/blushed cheeks 1</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">// //</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">embarrassed/blushed cheeks 2</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">〃 〃</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">embarrassed/blushed cheeks 3</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">* *</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">embarrassed/blushed cheeks 4</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">● ●</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">embarrassed/blushed cheeks 5</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">@ @</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">embarrassed/blushed cheeks 6</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">｡ ｡</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">embarrassed/blushed cheeks 7</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">w w</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">embarrassed/blushed cheeks 8</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">o o</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facialPart">
+            <p class="facialPartTitle">Hands/arms</p>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">rasing hand up</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">ノ</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">hand 1</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">つ</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">hand 2</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">∩</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="subTitle">rasomg hand stright up</p>
+                </div>
+                <div class="column">
+                    <p class="subTitle">\</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <hr>
+        <p>This EMOTICON GENERATOR is still under construction :)</p>
+        <p>2019 GD for Web Assignment 2</p>
+    </div>
+
+</html>

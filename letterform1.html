@@ -29,6 +29,18 @@
             border-radius: 100%;
             background-color: aqua;
             mix-blend-mode: multiply;
+            transition: linear 1s;
+            transform-origin: top left;
+        }
+        
+        .no7:hover {}
+        
+        .container3:hover .no7 {
+            transform: scale(0.5);
+        }
+        
+        .container3:hover .no8 {
+            transform: scale(2);
         }
         
         .no8 {
@@ -40,7 +52,11 @@
             height: 200px;
             background-color: firebrick;
             mix-blend-mode: multiply;
+            transition: linear 1s;
+            transform-origin: right bottom;
         }
+        
+        .no8:hover {}
         
         .container4 {
             display: inline-block;
@@ -51,6 +67,13 @@
             position: relative;
             text-align: center;
             background-color: white;
+        }
+        
+        .container4:hover {
+            transform-origin: center;
+            transition: all 4s;
+            transition-timing-function: ease-in-out;
+            transform: rotate(3600deg);
         }
         
         .no9 {
@@ -83,6 +106,8 @@
             height: 500px;
             background-color: white;
             position: relative;
+            transition: all 1s;
+            transform-origin: bottom right;
         }
         
         .no11 {
@@ -135,6 +160,17 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            /* this is the right side of the g*/
+            transition: linear 1s;
+            transform-origin: right;
+        }
+        
+        .container5:hover {
+            transform: rotate(180deg);
+        }
+        
+        .container5:hover .no14 {
+            width: 260px;
         }
         
         .g-top {
@@ -276,6 +312,14 @@
             left: 50%;
             top: 50%;
             transform: translate(95%, 25%);
+            transition: linear 1s;
+            transform-origin: center;
+        }
+        
+        .container6:hover .no28 {
+            height: 375px;
+            transform: translateX(150px);
+            transform: rotateY(180deg);
         }
         
         .container7 {
@@ -287,6 +331,14 @@
             position: relative;
             text-align: center;
             background-color: white;
+        }
+        
+        .container7:hover .lg-l {
+            display: block;
+        }
+        
+        .container7:hover .lg-rite-dot {
+            display: block;
         }
         
         .no29 {
@@ -306,6 +358,28 @@
             position: absolute;
             background-color: white;
             margin: 250px 0px 0px 350px;
+        }
+        
+        .lg-l {
+            position: absolute;
+            width: 100px;
+            height: 250px;
+            border: solid 25px;
+            border-color: transparent transparent white white;
+            transform: translate(150%, 25%);
+            display: none;
+            transition: ease-in-out 2s;
+        }
+        
+        .lg-rite-dot {
+            position: absolute;
+            transform: translate(225%, 350%);
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 100%;
+            display: none;
+            transition: ease-in-out 4s;
         }
     </style>
 </head>
@@ -369,6 +443,9 @@
         <div class="no29"></div>
         <div class="no30"></div>
         <div class="no31"></div>
+        <div class="lg-l"></div>
+        <div class="lg-rite-dot"></div>
+        <div class="lg-left-dot"></div>
     </div>
 </body>
 
