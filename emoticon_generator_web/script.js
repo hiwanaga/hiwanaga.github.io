@@ -91,3 +91,7 @@ function copy() {
     document.execCommand("copy");
     alter("Copied!");
 }
+
+function reset() {
+    document.getElementById("ownGenerator").reset();
+}
