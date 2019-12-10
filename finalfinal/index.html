@@ -12,6 +12,40 @@
 
 <body>
 
+    <div id="clock" class="clock" onload="showTime()">
+        <script>
+            function showTime() {
+                var date = new Date();
+                var h = date.getHours(); // 0 - 23
+                var m = date.getMinutes(); // 0 - 59
+                var s = date.getSeconds(); // 0 - 59
+                var session = "AM";
+
+                if (h == 0) {
+                    h = 12;
+                }
+
+                if (h > 12) {
+                    h = h - 12;
+                    session = "PM";
+                }
+
+                h = (h < 10) ? "0" + h : h;
+                m = (m < 10) ? "0" + m : m;
+                s = (s < 10) ? "0" + s : s;
+
+                var time = h + ":" + m + ":" + s + " " + session;
+                document.getElementById("clock").innerText = time;
+                document.getElementById("clock").textContent = time;
+
+                setTimeout(showTime, 1000);
+
+            }
+
+            showTime();
+        </script>
+    </div>
+
 
     <div id="this">
         <div id="bad">
@@ -93,6 +127,19 @@
         <div id="yokohama">
             <img src="image/yokohama_landscape.svg" alt="" id="building">
         </div>
+
+    </div>
+
+    <div id="hallo">
+        <h1>FIREWORKS INFORMATION</h1>
+        <h2>Welcome to Yokohama Fireworks Festival (19:05 ~ 19:11)</h2>
+        <p>
+            This firework will greet everyone who came to the fireworks festival. There will be 70 fireworks that will be luanched in total. At the very end. It will give a huge impact to all of the audience, proving that this festival will not give a moment to bore.
+        </p>
+
+        <h3>
+            Contributor: Asahi Newspaper Creator: Hajime Hashimoto
+        </h3>
     </div>
 
 </body>
