@@ -49,7 +49,7 @@
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 100%;
-    height: 700px;
+    height: 500px;
     font-size: 50px;
     color: white;
     background-image: radial-gradient(ellipse closest-side at 50% 50%, transparent 40%, black 60%);
@@ -385,7 +385,7 @@ body {
     Helvetica,
     sans-serif;
     position: absolute;
-    top: 10%;
+    top: 5%;
 }
 #hallo {
     position: absolute;
@@ -393,9 +393,10 @@ body {
     padding: 2% 3%;
     border-radius: 20px;
     bottom: 2%;
-    margin-left: 5%;
+    margin-left: 0px;
     margin-right: 5%;
     /* WHY IS THE BOX MOVING!?!?!?!?! */
+    width: 90%;
 }
 h1 {
     font-size: 10px;
@@ -403,8 +404,11 @@ h1 {
     Helvetica,
     sans-serif;
     color: white;
+    margin-bottom: 0px;
 }
 h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
     font-size: 20px;
     font-family: Arial,
     Helvetica,
@@ -412,6 +416,8 @@ h2 {
     color: white;
 }
 p {
+    margin-top: 10px;
+    margin-bottom: 0px;
     font-size: 13px;
     font-family: Arial,
     Helvetica,
@@ -419,6 +425,8 @@ p {
     color: white;
 }
 h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
     font-size: 10px;
     font-family: Arial,
     Helvetica,
