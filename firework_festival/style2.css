@@ -386,6 +386,7 @@ body {
     sans-serif;
     position: absolute;
     top: 5%;
+    z-index: 1000;
 }
 #hallo {
     position: absolute;
